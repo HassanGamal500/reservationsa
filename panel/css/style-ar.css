@@ -1,0 +1,38 @@
+html {
+    direction:rtl;
+}
+
+body,
+.sidebar .nav-item .nav-link {
+    text-align:right !important;
+}
+.sidebar .nav-item .nav-link[data-toggle=collapse]::after {
+    float: left;
+}
+.navbar-nav {
+    padding-right:0;
+}
+.sidebar .nav-item .nav-link[data-toggle=collapse].collapsed::after {
+    content: '\f053';
+}
+.topbar .dropdown .dropdown-menu {  
+    right: -6em; 
+}
+
+.dropdown-menu {
+    text-align:right
+}
+.modal-footer {
+    justify-content: flex-start !important;
+}
+.modal-footer>:not(:first-child) {
+    margin-right: .25rem;
+}
+.scroll-to-top {
+        left: 1rem;
+        right:unset;
+}
+
+.float-right {
+    float: left!important;
+}
